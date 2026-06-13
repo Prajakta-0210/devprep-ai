@@ -1,0 +1,306 @@
+/* ==========================================
+   QUESTION BANK
+========================================== */
+
+.question-bank{
+
+    background:#FFFFFF;
+
+    border:1px solid #EAECD8;
+
+    border-radius:24px;
+
+    padding:30px;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.search-section{
+
+    margin-bottom:24px;
+}
+
+.search-section input{
+
+    width:100%;
+
+    height:58px;
+
+    border:1px solid #D9DBB4;
+
+    border-radius:16px;
+
+    padding:0 20px;
+
+    font-size:1rem;
+
+    background:#F7F7EF;
+
+    outline:none;
+
+    transition:0.3s ease;
+}
+
+.search-section input:focus{
+
+    border-color:#999C4E;
+
+    background:#FFFFFF;
+}
+
+/* ==========================================
+   FILTERS
+========================================== */
+
+.filters{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-bottom:30px;
+}
+
+.filters select{
+
+    height:55px;
+
+    border:1px solid #D9DBB4;
+
+    border-radius:14px;
+
+    padding:0 16px;
+
+    background:#F7F7EF;
+
+    color:#282616;
+
+    font-weight:500;
+
+    outline:none;
+}
+
+/* ==========================================
+   QUESTION LIST
+========================================== */
+
+.questions-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+/* ==========================================
+   QUESTION CARD
+========================================== */
+
+.question-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #EAECD8;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    transition:0.3s ease;
+}
+
+.question-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.question-card h3{
+
+    margin:18px 0;
+
+    color:#282616;
+
+    font-size:1.2rem;
+}
+
+/* ==========================================
+   TAGS
+========================================== */
+
+.question-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+.question-tags span{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:0.85rem;
+
+    font-weight:600;
+}
+
+.company{
+
+    background:#ECEFD0;
+
+    color:#6B6F2B;
+}
+
+.topic{
+
+    background:#E8F3E8;
+
+    color:#2E7D32;
+}
+
+.medium{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+}
+
+.hard{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+}
+
+.easy{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+}
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.question-actions{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+}
+
+.question-actions button{
+
+    border:none;
+
+    background:#F7F7EF;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.question-actions button:hover{
+
+    background:#ECEFD0;
+}
+
+.view-btn{
+
+    background:#999C4E !important;
+
+    color:white;
+}
+
+.view-btn:hover{
+
+    background:#80803F !important;
+}
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:35px;
+}
+
+.pagination button{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#F7F7EF;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.3s ease;
+}
+
+.pagination button:hover{
+
+    background:#999C4E;
+
+    color:white;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .filters{
+
+        grid-template-columns:1fr;
+    }
+
+    .question-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:12px;
+    }
+
+    .pagination{
+
+        flex-wrap:wrap;
+    }
+}
