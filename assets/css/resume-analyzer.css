@@ -1,0 +1,147 @@
+/* ==========================================
+   RESUME ANALYZER
+========================================== */
+
+.upload-card,
+.suggestions-card,
+.history-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECD8;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+}
+
+.upload-card h2,
+.suggestions-card h2,
+.history-card h2 {
+
+    margin-bottom: 12px;
+}
+
+.upload-card p {
+
+    margin-bottom: 20px;
+
+    color: #656334;
+}
+
+.upload-card input {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+.upload-card button {
+
+    background: #999C4E;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+/* ==========================================
+   SCORE GRID
+========================================== */
+
+.score-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 24px;
+
+    margin-bottom: 30px;
+}
+
+.score-card {
+
+    background: white;
+
+    border: 1px solid #EAECD8;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.score-value {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #999C4E;
+
+    margin-top: 15px;
+}
+
+/* ==========================================
+   SUGGESTIONS
+========================================== */
+
+.suggestions-card ul {
+
+    padding-left: 20px;
+}
+
+.suggestions-card li {
+
+    margin-bottom: 12px;
+
+    color: #656334;
+}
+
+/* ==========================================
+   HISTORY
+========================================== */
+
+.history-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ECEFD0;
+}
+
+.history-item:last-child {
+
+    border-bottom: none;
+}
+
+.history-item strong {
+
+    color: #999C4E;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .score-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}

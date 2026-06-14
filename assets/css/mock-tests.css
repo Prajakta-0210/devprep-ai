@@ -1,0 +1,172 @@
+/* ==========================================
+   MOCK TEST PAGE
+========================================== */
+
+.mock-tests-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.mock-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+/* ==========================================
+   TESTS GRID
+========================================== */
+
+.tests-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+}
+
+.test-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #EAECD8;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    transition:0.3s ease;
+}
+
+.test-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.test-badge{
+
+    display:inline-block;
+
+    background:#ECEFD0;
+
+    color:#6B6F2B;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:0.85rem;
+
+    font-weight:600;
+
+    margin-bottom:16px;
+}
+
+.test-card h3{
+
+    margin-bottom:10px;
+
+    color:#282616;
+}
+
+.test-card p{
+
+    margin-bottom:24px;
+
+    color:#656334;
+}
+
+.start-btn{
+
+    display:inline-block;
+
+    background:#999C4E;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+}
+
+/* ==========================================
+   RESULTS
+========================================== */
+
+.results-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #EAECD8;
+
+    border-radius:24px;
+
+    padding:30px;
+}
+
+.results-card h2{
+
+    margin-bottom:25px;
+}
+
+.result-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #ECECEC;
+}
+
+.result-item:last-child{
+
+    border-bottom:none;
+}
+
+.result-item strong{
+
+    color:#999C4E;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+    .mock-stats{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .tests-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .mock-stats{
+
+        grid-template-columns:1fr;
+    }
+}
